@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  email    String @unique
+  password String
+  shot     Int   @default(10)
+
+  shots   Shot[]
+  Product Product[]
+}
+
+model Product {
+  id        Int     @id @default(autoincrement())
+  name      String
+  active    Boolean @default(true)
+  price     Int?    @default(0)
+  countdown Int     @default(30)
+
+  winner   User? @relation(fields: [winnerId], references: [id])
+  winnerId Int?
+
+  shots Shot[]
+}
+
+model Shot {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now()) @db.Timestamptz()
+
+  User      User    @relation(fields: [userId], references: [id])
+  userId    Int
+  Product   Product @relation(fields: [productId], references: [id])
+  productId Int
+}
