@@ -26,3 +26,16 @@ Implantação no Vercel
 A maneira mais fácil de implantar seu aplicativo Next.js é usar a Plataforma Vercel dos criadores do Next.js.
 
 Confira nossa documentação de implantação do Next.js para mais detalhes.
+
+## Itens Desenvolvidos
+ Login ☑
+ Cadastro de Usuários ☑
+ Cadastro de Produtos ☑
+ Tela para Adicionar Lances à Conta ☑
+ Bônus Inicial: 10 Lances para Novos Usuários ☑
+
+ ## Itens Pendentes
+ Implementação completa do componente de "PRODUTO/LANCE" ❌
+ Realização de lances de R$ 0,01 em leilões ativos ❌
+ Emissões e recebimentos de mensagens usando Socket.io ❌
+ Atualização do valor do produto para todos os usuários na tela principal ❌
