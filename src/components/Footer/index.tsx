@@ -8,7 +8,7 @@ import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 export const Footer = () => {
   return (
     <FlowbiteFooter container>
-      {/* <div className="w-full">
+      <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <Image
@@ -56,7 +56,7 @@ export const Footer = () => {
             <FlowbiteFooter.Icon href="#" icon={BsGithub} />
           </div>
         </div>
-      </div> */}
+      </div>
     </FlowbiteFooter>
   );
 };

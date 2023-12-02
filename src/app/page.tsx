@@ -80,7 +80,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col">
-       {userShots !== undefined ? (
+      {userShots !== undefined ? (
         <Header username={data.user.name!} shots={userShots} />
       ) : null}
 
@@ -130,7 +130,7 @@ export default function Home() {
         <Carousel />
       </section>
 
-       <Reviews />
+      <Reviews />
       <Footer />
     </main>
   );

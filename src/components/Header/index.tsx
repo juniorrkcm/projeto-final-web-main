@@ -21,7 +21,7 @@ export const Header = ({ username, shots }: HeaderProps) => {
         <div className="flex md:order-2 gap-4">
           {shots !== undefined ? (
             <Link href={"/buyShots"}>
-              <Button color="blue">Seus lances: {shots}</Button>
+              <Button color="red">Você tem {shots} lances</Button>
             </Link>
           ) : null}
           <Avatar

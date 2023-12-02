@@ -9,23 +9,19 @@ export const Carousel = () => {
       <FlowbiteCarousel>
         <img
           alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+          src="/1.png"
         />
         <img
           alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+          src="/2.png"
         />
         <img
           alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+          src="/3.jpg"
         />
         <img
           alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
+          src="/4.png"
         />
       </FlowbiteCarousel>
     </div>

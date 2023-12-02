@@ -87,7 +87,7 @@ const SignUp = () => {
         {...register("confirmPassword", { required: true })}
       />
 
-<Button type="submit" color="blue">Criar Conta</Button>
+<Button type="submit" color="red">Criar Conta</Button>
     </form>
   );
 };
