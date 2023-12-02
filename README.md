@@ -13,7 +13,7 @@ Abra http://localhost:3000 no seu navegador para ver o resultado.
 
 Você pode começar a editar a página modificando app/page.tsx. A página é atualizada automaticamente conforme você edita o arquivo.
 
-## Configuração do Banco de Dados
+### Configuração do Banco de Dados
 
 Para que o projeto funcione corretamente, é necessário configurar um arquivo `.env` na raiz do projeto com as informações do banco de dados. Siga as instruções abaixo para configurar o arquivo `.env`:
 
