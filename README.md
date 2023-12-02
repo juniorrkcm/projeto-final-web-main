@@ -29,7 +29,8 @@ Para começar, crie um arquivo .env na pasta onde estão os diretorios principai
 
 Este projeto utiliza next/font para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
 
-Saiba Mais
+### Saiba Mais
+
 Para aprender mais sobre o Next.js, consulte os seguintes recursos:
 
 Documentação do Next.js - aprenda sobre os recursos e a API do Next.js.
