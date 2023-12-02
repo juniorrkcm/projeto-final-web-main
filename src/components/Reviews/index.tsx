@@ -83,14 +83,35 @@ const Depoimentos = () => {
     </div>
   </Card>
 
-          
-        <Image
-          src={"/background1.jpg"}
-          fill
-          alt="background"
-          style={{ objectPosition: "0 100%" }}
-          className="object-cover"
-        />
+  <Image
+    src={"/background1.jpg"}
+    fill
+    alt="Depoimentos"
+    style={{ objectPosition: "0 100%", width: "100%", height: "100%" }}
+    className="object-cover"
+  />
+
+<div style={{ position: "relative", width: "100%", height: "100%" }}>
+  
+  <div
+    style={{
+      position: "absolute",
+      top: "50%",
+      left: "155%",
+      transform: "translate(-50%, -650%)",
+      color: "white",
+      fontSize: "2em",
+      fontWeight: "bold",
+      textAlign: "center",
+      textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)",
+      fontFamily: "Arial, sans-serif",
+    }}
+  >
+    Depoimentos
+  </div>
+</div>
+
+        
         <div className="col-span-3 flex justify-center">
           <button className="p-2 flex items-center justify-center text-center font-medium relative focus:z-10 focus:outline-none text-white bg-blue-700 border border-transparent enabled:hover:bg-blue-800 focus:ring-cyan-300 dark:bg-cyan-600 dark:enabled:hover:bg-cyan-700 dark:focus:ring-cyan-800 rounded-lg focus:ring-2">
             Ver Todos

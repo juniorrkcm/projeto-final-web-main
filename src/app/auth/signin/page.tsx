@@ -45,7 +45,7 @@ const SignIn = () => {
         {...register("password")}
       />
 
-      <Button type="submit" color="red">Entrar</Button>
+      <Button type="submit" color="blue">Entrar</Button>
       <p className="text-sm w-fit">
         Não possui conta? <Link href={"/auth/signup"}>Cadastre-se</Link>
       </p>

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
 
 type Inputs = {
   username: string;
@@ -87,7 +88,11 @@ const SignUp = () => {
         {...register("confirmPassword", { required: true })}
       />
 
-<Button type="submit" color="red">Criar Conta</Button>
+      <Button type="submit" color="blue">Criar Conta</Button>
+      <p className="text-sm w-fit">
+      Voltar para Login <Link href={"/auth/signin"}>
+        Clique aqui</Link>
+      </p>
     </form>
   );
 };

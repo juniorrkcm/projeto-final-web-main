@@ -4,6 +4,7 @@ import { Carousel } from "@/components/Carousel";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Reviews from "@/components/Reviews";
+import  Produtos  from "@/components/Products";
 import {
   ClientToServerEvents,
   InterServerEvents,
@@ -86,7 +87,7 @@ export default function Home() {
 
       <section className="flex flex-col max-w-4xl w-full m-auto">
         <h1 className="text-red-900 text-2xl font-bold mb-4 mt-5">
-          Leilões
+          
         </h1>
         <div className="grid grid-cols-3 gap-4">
           {products?.map(
@@ -129,8 +130,9 @@ export default function Home() {
 
         <Carousel />
       </section>
-
+      <Produtos/>              
       <Reviews />
+      
       <Footer />
     </main>
   );
