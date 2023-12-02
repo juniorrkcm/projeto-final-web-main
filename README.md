@@ -29,9 +29,13 @@ Confira nossa documentação de implantação do Next.js para mais detalhes.
 
 ## Itens Desenvolvidos
  Login ☑
+ 
  Cadastro de Usuários ☑
+ 
  Cadastro de Produtos ☑
+ 
  Tela para Adicionar Lances à Conta ☑
+ 
  Bônus Inicial: 10 Lances para Novos Usuários ☑
 
  ## Itens Pendentes
