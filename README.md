@@ -13,6 +13,8 @@ Abra http://localhost:3000 no seu navegador para ver o resultado.
 
 Você pode começar a editar a página modificando app/page.tsx. A página é atualizada automaticamente conforme você edita o arquivo.
 
+Este projeto utiliza next/font para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
+
 ### Configuração do Banco de Dados
 
 Para que o projeto funcione corretamente, é necessário configurar um arquivo `.env` na raiz do projeto com as informações do banco de dados. Siga as instruções abaixo para configurar o arquivo `.env`:
@@ -24,10 +26,6 @@ Para que o projeto funcione corretamente, é necessário configurar um arquivo `
 ```env
 DATABASE_URL="postgresql://seu_usuario:senha@seu_host:5432/seu_banco_de_dados"
 ```
-
-Para começar, crie um arquivo .env na pasta onde estão os diretorios principais do projeto
-
-Este projeto utiliza next/font para otimizar e carregar automaticamente a fonte Inter, uma fonte personalizada do Google.
 
 ### Saiba Mais
 
