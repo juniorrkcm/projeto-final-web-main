@@ -40,6 +40,9 @@ Confira nossa documentação de implantação do Next.js para mais detalhes.
 
  ## Itens Pendentes
  Implementação completa do componente de "PRODUTO/LANCE" ❌
+ 
  Realização de lances de R$ 0,01 em leilões ativos ❌
+ 
  Emissões e recebimentos de mensagens usando Socket.io ❌
+ 
  Atualização do valor do produto para todos os usuários na tela principal ❌
