@@ -1,15 +1,15 @@
-Leilão Legal
+## Leilão Legal
 Este repositório contém os arquivos para um sistema de leilão online.
 
-Início Rápido
+### Início Rápido
 Este projeto utiliza Next.js e foi inicializado com create-next-app.
 
 Para começar, execute o servidor de desenvolvimento:
 
 npm run dev
-# ou
+ou
 yarn dev
-# ou
+ou
 pnpm dev
 
 Abra http://localhost:3000 no seu navegador para ver o resultado.
