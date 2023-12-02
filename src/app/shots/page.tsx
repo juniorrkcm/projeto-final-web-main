@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Button, TextInput } from "flowbite-react";
 import { useSession } from "next-auth/react";
+import Link from "next/link";
 
 type Inputs = {
   shots: string;
@@ -46,6 +47,9 @@ const AddShots = () => {
       />
 
       <Button type="submit" color="blue">Adicionar</Button>
+      <p className="text-sm w-fit text-center" style={{ display: 'block', margin: 'auto' }}>
+      <Link href={"/"}> Voltar para Inicio</Link>
+      </p>
     </form>
   );
 };

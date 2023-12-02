@@ -98,7 +98,7 @@ const Depoimentos = () => {
       position: "absolute",
       top: "50%",
       left: "155%",
-      transform: "translate(-50%, -650%)",
+      transform: "translate(-50%, -660%)",
       color: "white",
       fontSize: "2em",
       fontWeight: "bold",

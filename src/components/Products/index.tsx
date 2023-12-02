@@ -1,8 +1,32 @@
-import React from "react";
+
+
+
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Card } from "flowbite-react";
 
 const Produtos = () => {
+  const [countdown, setCountdown] = useState(30);
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    let timer;
+    if (isActive && countdown > 0) {
+      timer = setInterval(() => {
+        setCountdown((prev) => prev - 1);
+      }, 1000);
+    }
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [isActive, countdown]);
+
+  const handleButtonClick = () => {
+    setIsActive(true);
+    setCountdown(30);
+  };
+
   return (
     <>
       <section className="mt-8 pt-24 pb-24 relative grid grid-cols-3 gap-4 pl-32 pr-32">
@@ -27,10 +51,12 @@ const Produtos = () => {
             </h5>
             <p className="text-center mt-4">
               Xbox Series X.
-            </p>
+              </p> 
+              <p>Contador: {countdown}s</p>
+            
+            <button onClick={handleButtonClick}>Iniciar Contador</button>
           </div>
         </Card>
-
         {/* Produto 2 */}
         <Card className="bg-white z-10 shadow-sm flex flex-col justify-between">
           <div className="mb-2 flex justify-center items-center">
@@ -53,6 +79,8 @@ const Produtos = () => {
             <p className="text-center mt-4">
               Playstaition 5.
             </p>
+            <p>Contador: {countdown}s</p>
+            <button onClick={handleButtonClick}>Iniciar Contador</button>
           </div>
         </Card>
 
@@ -78,6 +106,8 @@ const Produtos = () => {
     <p className="text-center mt-4">
       Nintendo Switch.
     </p>
+    <p>Contador: {countdown}s</p>  
+    <button onClick={handleButtonClick}>Iniciar Contador</button>
   </div>
 </Card>
 
@@ -96,7 +126,7 @@ style={{
   position: "absolute",
   top: "50%",
   left: "155%",
-  transform: "translate(-50%, -670%)",
+  transform: "translate(-50%, -770%)",
   color: "white",
   fontSize: "2em",
   fontWeight: "bold",
@@ -117,6 +147,5 @@ style={{
     </>
   );
 };
-
 
 export default Produtos;

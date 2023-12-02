@@ -90,7 +90,7 @@ const SignUp = () => {
 
       <Button type="submit" color="blue">Criar Conta</Button>
       <p className="text-sm w-fit">
-      Voltar para Login <Link href={"/auth/signin"}>
+      Voltar para Login? <Link href={"/auth/signin"}>
         Clique aqui</Link>
       </p>
     </form>
